@@ -1,4 +1,4 @@
-# theme-hacs
+# Read Your Meter Home assistant pyscript
 
 _Sample theme repository for [HACS](https://github.com/custom-components/hacs)_
 

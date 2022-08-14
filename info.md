@@ -1,4 +1,4 @@
-# theme-hacs
+# Read Your Meter Pro integration
 
 _Sample theme repository for [HACS](https://github.com/custom-components/hacs)._
 
