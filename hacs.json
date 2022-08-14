@@ -1,0 +1,5 @@
+{
+  "name": "Read Your Meter Pro",
+	"content_in_root": true,
+	"filename": "pyscript/apps/rym.py"
+}
