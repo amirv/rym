@@ -1,7 +1,31 @@
 # Read Your Meter Home assistant pyscript
 
-_Sample theme repository for [HACS](https://github.com/custom-components/hacs)_
+A pyscript to update a water meter sensor connected to Read Your Meter Pro of Arad's meters
 
 ## Installation
 
-Download the `hacs.yaml` file from inside the `themes` directory here to your local `themes` directory, then reload `themes` in Home Assistant.
+Install pyscript
+place pyscript/apps/rym.py in /config/pyscript/apps/rym.py
+
+Create a secret.yaml:
+rym_email: "xxx@gmail.com"
+rym_pw: "XXXXXX"
+rym_deviceId: "XXXXXXXXXXXXXXXXXXXXxx"
+
+
+Add to configuration.yaml:
+pyscript:
+  apps:
+    rym:
+      email: !secret rym_email
+      pw: !secret rym_pw
+      deviceId: !secret rym_deviceId
+
+
+
+template:
+  - sensor:
+    - name: "rym"
+      unit_of_measurement: "L"
+      state_class: measurement
+      state: 0
