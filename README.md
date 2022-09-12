@@ -8,12 +8,14 @@ Install pyscript
 place pyscript/apps/rym.py in /config/pyscript/apps/rym.py
 
 Create a secret.yaml:
+```
 rym_email: "xxx@gmail.com"
 rym_pw: "XXXXXX"
 rym_deviceId: "XXXXXXXXXXXXXXXXXXXXxx"
-
+```
 
 Add to configuration.yaml:
+```
 pyscript:
   apps:
     rym:
@@ -29,3 +31,4 @@ template:
       unit_of_measurement: "L"
       state_class: measurement
       state: 0
+```
